@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+  <article class="media content-section">
+    <div class="media-body">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for s in spx %}
+            <tr>
+              <td>{{ s.time }}</td>
+              <td>{{ s.open }}</td>
+              <td>{{ s.high }}</td>
+              <td>{{ s.low }}</td>
+              <td>{{ s.close }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </article>
+{% endblock content %}
