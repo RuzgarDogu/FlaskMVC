@@ -3,7 +3,8 @@ import os
 class Config(object):
     """docstring for Config."""
 
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    # SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY = '7bce2ca88c6b82065a42a4ca1bd2ccf6'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///site.db'
     # SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://{}:{}@{}/flask".format('root', '', 'localhost')
 
