@@ -7,6 +7,13 @@ https://www.youtube.com/watch?v=IolxqkL7cD8
 Böylelikle benden başka kimse kullanamaz. Bu environment Variables'ı yazdığımız kodun içerisinde çekiyoruz.
 Örnek:
 
+# Requirements.txt
+Bunu oluşturmak için önce virtual environment tarafında pip freeze ile kütüphaneleri ve veriyonlarını görüyoruz.
+pip freeze
+
+bunu requirements.txt tarafına eklemek için (Lünux ve Mac => Windows'ta denemek lazım):
+pip freeze > requirements.txt
+
 
 # Server için Command Line Süreci
 C:\Users\emres
