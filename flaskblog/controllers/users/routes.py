@@ -23,7 +23,7 @@ def register():
         return redirect(url_for('users.login'))
     return render_template('users/register.html', title='Register', form=form)
 
-@users.route("/loginnn", methods=['GET','POST'])
+@users.route("/login", methods=['GET','POST'])
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('main.home'))
